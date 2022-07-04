@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+body {
+    background-color: rgba(64, 224, 208, 0.472);
+   
+}
+
+h1 {
+    /* To style the Header tik tac toe text*/
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#gameboard {
+    /* Grid settings */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    /* To style the main boxes */
+    background-color: blueviolet;
+    padding: 1rem;
+    gap: 1rem;  
+    margin: 3rem 5rem;
+
+    /* To style the x/o text */
+    color: black;
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#gameboard > button {
+    /* To style the inner tic-tak-toe squares */
+    background-color: lightskyblue;
+    padding: 1rem;
+}
+
+#playerSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 5rem;
+}
+
+#buttonarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 5rem;
+}
+
+#button-reset {
+    background-color: rgba(112, 89, 240, 0.589);
+    padding: 1rem;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2.2 rem;
+
+}
